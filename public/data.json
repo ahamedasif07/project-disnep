@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "movie_name": "Inception",
+      "movie_title": "Inception",
+      "image": "https://i.ibb.co/ss4KxNX/dark-fantasy-scene.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 2,
+      "movie_name": "The Dark Knight",
+      "movie_title": "The Dark Knight",
+      "image": "https://i.ibb.co/xYNZJfg/pexels-keith-pottinger-133115999-15511010.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 3,
+      "movie_name": "Interstellar",
+      "movie_title": "Interstellar",
+      "image": "https://i.ibb.co/ss4KxNX/dark-fantasy-scene.jpghttps://i.ibb.co/QJ0jwqF/pexels-mikhail-nilov-7709020.jpg",
+      "movie_category": "new"
+    },
+    {
+      "id": 4,
+      "movie_name": "Dune",
+      "movie_title": "Dune",
+      "image": "https://i.ibb.co/R9G8f4M/pexels-taryn-elliott-3889891.jpg",
+      "movie_category": "new"
+    },
+    {
+      "id": 5,
+      "movie_name": "No Time to Die",
+      "movie_title": "No Time to Die",
+      "image": "https://i.ibb.co/616Rv0t/images.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 6,
+      "movie_name": "The Matrix Resurrections",
+      "movie_title": "The Matrix Resurrections",
+      "image": "https://i.ibb.co/pvVMtZF/images-2.jpg",
+      "movie_category": "coming soon"
+    },
+    {
+      "id": 7,
+      "movie_name": "Spider-Man: No Way Home",
+      "movie_title": "Spider-Man: No Way Home",
+      "image": "https://i.ibb.co/PhNZmNM/HD-wallpaper-spider-man-no-way-home-poster.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 8,
+      "movie_name": "Avatar: The Way of Water",
+      "movie_title": "Avatar: The Way of Water",
+      "image": "https://i.ibb.co/Tw4tS74/download.jpg",
+      "movie_category": "coming soon"
+    },
+    {
+      "id": 9,
+      "movie_name": "Black Widow",
+      "movie_title": "Black Widow",
+      "image": "https://i.ibb.co/bRG3hVV/MV5-BNj-Rm-NDI5-Mj-Mt-Mm-Fh-Zi00-Yzcw-LWI4-ZGIt-MGI2-Mj-I0-N2-Q3-Ym-Iw-Xk-Ey-Xk-Fqc-Gde-QXVy-MTkx-Nj.jpg",
+      "movie_category": "new"
+    },
+    {
+      "id": 10,
+      "movie_name": "Guardians of the Galaxy Vol. 3",
+      "movie_title": "Guardians of the Galaxy Vol. 3",
+      "image": "https://i.ibb.co/dkYk50F/download-1.jpg",
+      "movie_category": "coming soon"
+    },
+    {
+      "id": 11,
+      "movie_name": "Tenet",
+      "movie_title": "Tenet",
+      "image": "https://i.ibb.co/QHcfCY5/download-2.jpg",
+      "movie_category": "new"
+    },
+    {
+      "id": 12,
+      "movie_name": "Shang-Chi and the Legend of the Ten Rings",
+      "movie_title": "Shang-Chi and the Legend of the Ten Rings",
+      "image": "https://i.ibb.co/4Mqyj0S/download-3.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 13,
+      "movie_name": "Eternals",
+      "movie_title": "Eternals",
+      "image": "https://i.ibb.co/Wpxdfs6/download-4.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 14,
+      "movie_name": "The Suicide Squad",
+      "movie_title": "The Suicide Squad",
+      "image": "https://i.ibb.co/JzzrNGN/download-5.jpg",
+      "movie_category": "new"
+    },
+    {
+      "id": 15,
+      "movie_name": "Doctor Strange in the Multiverse of Madness",
+      "movie_title": "Doctor Strange in the Multiverse of Madness",
+      "image": "https://i.ibb.co/tJPNGsF/download-6.jpg",
+      "movie_category": "coming soon"
+    },
+    {
+      "id": 16,
+      "movie_name": "The Batman",
+      "movie_title": "The Batman",
+      "image": "https://i.ibb.co/qrvYxzZ/download-7.jpg",
+      "movie_category": "trending"
+    },
+    {
+      "id": 17,
+      "movie_name": "Top Gun: Maverick",
+      "movie_title": "Top Gun: Maverick",
+      "image": "https://i.ibb.co/tK6CRz7/download-8.jpg",
+      "movie_category": "new"
+    },
+    {
+      "id": 18,
+      "movie_name": "Jurassic World: Dominion",
+      "movie_title": "Jurassic World: Dominion",
+      "image": "https://i.ibb.co/MN2V1pq/download-9.jpg",
+      "movie_category": "coming soon"
+    },
+    {
+      "id": 19,
+      "movie_name": "Black Panther: Wakanda Forever",
+      "movie_title": "Black Panther: Wakanda Forever",
+      "image": "https://i.ibb.co/TgkG4tp/download-10.jpg",
+      "movie_category": "coming soon"
+    },
+    {
+      "id": 20,
+      "movie_name": "Thor: Love and Thunder",
+      "movie_title": "Thor: Love and Thunder",
+      "image": "https://i.ibb.co/mRcWtz4/download-11.jpg",
+      "movie_category": "coming soon"
+    }
+  ]
+  
