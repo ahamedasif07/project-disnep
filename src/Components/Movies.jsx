@@ -10,6 +10,7 @@ const Movies = () => {
 //movie filtarin start
     const [movies , setMovies]=useState([])
     const [filteringMovie ,setFiltaringMovie]=useState([])
+    const [movieLenght , setMovieLength] = useState(6)
    
     useEffect(()=>{
         fetch('data.json')
@@ -40,7 +41,8 @@ const Movies = () => {
 
 
 //movie filtarin end 
-
+ 
+ 
     
   
     return (
@@ -54,13 +56,18 @@ const Movies = () => {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-3 px-8">
                     {
-                      filteringMovie.map(movie => <Movie  key={movie.id} movie={movie}></Movie>)
+                      filteringMovie.slice(0,movieLenght).map(movie => <Movie  key={movie.id} movie={movie}></Movie>)
                     }
 
                     
                 </div>
                 
             </div>
+           <div className={movieLenght === movies.length ? "hidden" : ''}>
+           <div className="flex justify-center">
+                <button onClick={()=>setMovieLength(movies.length)} className='bg-blue-600  px-3 py-2 rounded-full text-gray-200 uppercase '> show all</button>
+                </div>
+           </div>
             
         </div>
     );
