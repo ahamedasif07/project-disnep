@@ -3,31 +3,43 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Movie from "./Movie";
 
+
 const Movies = () => {
 
+
+//movie filtarin start
     const [movies , setMovies]=useState([])
+    const [filteringMovie ,setFiltaringMovie]=useState([])
 
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
-        .then(data => setMovies(data))
+    .then(data => {setMovies(data); setFiltaringMovie(data);});
+        
     },[])
-    console.log(movies)
+    console.log('filtared',filteringMovie)
 
     const handleTranding =()=>{
+      
         const tranding = movies.filter(movie => movie.movie_category === "trending")
-        setMovies(tranding)
+        setFiltaringMovie(tranding)
+      
     }
     const handleNew =()=>{
         const newMovie = movies.filter(movie => movie.movie_category === "new")
-        setMovies(newMovie)
+        setFiltaringMovie(newMovie)
     }
     const handleCommingSoon =()=>{
         const commingSoon = movies.filter(movie => movie.movie_category === "coming soon")
-        setMovies(commingSoon)
+        setFiltaringMovie(commingSoon)
     }
+   
 
 
+//movie filtarin end 
+
+
+  
     return (
         <div className="">
             <div className="gap-4 grid justify-center">
@@ -39,8 +51,10 @@ const Movies = () => {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-3 px-8">
                     {
-                      movies.map(movie => <Movie  key={movie.id} movie={movie}></Movie>)
+                      filteringMovie.map(movie => <Movie  key={movie.id} movie={movie}></Movie>)
                     }
+
+                    
                 </div>
             </div>
             
