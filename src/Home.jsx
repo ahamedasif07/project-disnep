@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
 
-      <div className='text-gray-100 bg-[#040714]'>
+      <div className='text-gray-100 bg-[#090a0f]'>
       <Navbar></Navbar>
       <Header></Header>
       <Movies></Movies>

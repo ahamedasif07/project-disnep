@@ -4,19 +4,22 @@ import { useState } from "react";
 import Movie from "./Movie";
 
 
-const Movies = () => {
 
+const Movies = () => {
 
 //movie filtarin start
     const [movies , setMovies]=useState([])
     const [filteringMovie ,setFiltaringMovie]=useState([])
-
+   
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
     .then(data => {setMovies(data); setFiltaringMovie(data);});
         
     },[])
+
+   
+
     console.log('filtared',filteringMovie)
 
     const handleTranding =()=>{
@@ -38,7 +41,7 @@ const Movies = () => {
 
 //movie filtarin end 
 
-
+    
   
     return (
         <div className="">
@@ -56,6 +59,7 @@ const Movies = () => {
 
                     
                 </div>
+                
             </div>
             
         </div>
