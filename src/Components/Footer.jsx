@@ -1,8 +1,19 @@
 import logo from '../assets/img/Logos.png'
 import { MdDone } from "react-icons/md";
 import image from '../assets/img/Image.png'
+import Questions from './Questions';
+import { useEffect, useState } from 'react';
+import { data } from 'autoprefixer';
 
 const Footer = () => {
+
+    const [watchList,setWatchList]=useState([])
+    useEffect(()=>{
+        fetch('feature.json')
+        .then(res => res.json())
+        .then(data => setWatchList(data))
+    },[])
+
     return (
         <div>
          {/* chose your plan start*/}
@@ -77,11 +88,11 @@ const Footer = () => {
               </div>
                 <div className='md:w-1/2 grid justify-center pl-2'>
                     <h1 className='font-semibold text-4xl'>Watch the way you want</h1>
-                    <li>Host virtual movie nights with GroupWatch. Pause, rewind, and react with up to six friends. To invite or be invited to join GroupWatch, subscription is required.</li>
-                    <li>Download any movie or series and watch it on the go</li>
-                    <li>Keep your family safe with easy parental controls.</li>
-                    <li>An ever-growing range of titles in stunning 4K UHD and Dolby Atmos sound on compatible devices.</li>
-                    <li>Stream on up to four devices at the same time.</li>
+                  <div className='mt-4'>
+                  {
+                    watchList.map(feature => <li>{feature.feature}</li> )
+                   }
+                  </div>
                 </div>
             </div>
          </section>
@@ -97,11 +108,14 @@ const Footer = () => {
 	<div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
 		
 		<div className="space-y-4">
-			<details className="w-full border rounded-lg">
+            <div className=''>
+            <Questions></Questions>
+            </div>
+			{/* <details className="w-full border rounded-lg">
 				<summary className="px-4 py-6 focus:outline-none focus-visible:dark:ring-violet-600">What is Disney+?</summary>
 				<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-600">Lectus iaculis orci metus vitae ligula dictum per. Nisl per nullam taciti at adipiscing est. </p>
-			</details>
-			<details className="w-full border rounded-lg">
+			</details> */}
+			{/* <details className="w-full border rounded-lg">
 				<summary className="px-4 py-6 focus:outline-none focus-visible:dark:ring-violet-600">How much does Disney+ cost?</summary>
 				<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-600">Tincidunt ut hac condimentum rhoncus phasellus nostra. Magna porttitor egestas tincidunt neque vehicula potenti. </p>
 			</details>
@@ -116,7 +130,7 @@ const Footer = () => {
 			<details className="w-full border rounded-lg">
 				<summary className="px-4 py-6 focus:outline-none focus-visible:dark:ring-violet-600">What is the Disney Bundle??</summary>
 				<p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-600">Justo libero tellus integer tincidunt justo semper consequat venenatis aliquet imperdiet. Ultricies urna proin fusce nulla pretium sodales vel magna et massa euismod vulputate sed. </p>
-			</details>
+			</details> */}
 		</div>
 	</div>
 </section>

@@ -11,7 +11,7 @@ const Movies = () => {
     const [movies , setMovies]=useState([])
     const [filteringMovie ,setFiltaringMovie]=useState([])
     const [movieLenght , setMovieLength] = useState(6)
-   
+    
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
@@ -26,6 +26,7 @@ const Movies = () => {
     const handleTranding =()=>{
       
         const tranding = movies.filter(movie => movie.movie_category === "trending")
+       
         setFiltaringMovie(tranding)
       
     }
@@ -63,7 +64,7 @@ const Movies = () => {
                 </div>
                 
             </div>
-           <div className={movieLenght === movies.length ? "hidden" : ''}>
+           <div className={movieLenght === movies.length ? "hidden" : 'block'}>
            <div className="flex justify-center">
                 <button onClick={()=>setMovieLength(movies.length)} className='bg-blue-600  px-3 py-2 rounded-full text-gray-200 uppercase '> show all</button>
                 </div>

@@ -7,7 +7,7 @@ const Header = () => {
         <header className=' '>
             <div  className="bg-cover h-[600px] bg-top  bg-center h-screen"
       style={{ backgroundImage: `url(${bgImage})` }}>
-        <div className='flex  h-[600px] pb-10 justify-around items-center'>
+        <div className='flex max-w-screen-xl px-4 mx-auto h-[600px] pb-10 items-center'>
            <div>
            <figure>
                 <img className='mb-10 grid ' src={disnep} alt="disnep logo"  />

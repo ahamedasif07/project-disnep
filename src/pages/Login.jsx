@@ -1,11 +1,11 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
         <div className='grid justify-center '>
 
-<div className="w-full max-w-md bg-slate-800 mt-8 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+<div className="w-full max-w-md  mt-8 p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
 	<form noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">

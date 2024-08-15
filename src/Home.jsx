@@ -13,9 +13,14 @@ function Home() {
 
       <div className='text-gray-100 bg-[#090a0f]'>
       <Navbar></Navbar>
+      
       <Header></Header>
+    
+      <div className='max-w-screen-xl mx-auto'>
+       
       <Movies></Movies>
       <Footer></Footer>
+       </div>
       </div>
  
     </>
